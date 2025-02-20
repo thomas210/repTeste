@@ -21,13 +21,10 @@ jobs:
         with:
           python-version: '3.9'
 
-      # - name: Instalar dependências
-      #   run: |
-      #     python -m venv venv
-      #     source venv/bin/activate
-      #     pip install -r requirements.txt
+      - name: Instalar dependências
+        run: |
+          pip install pytest
 
       - name: Rodar testes
         run: |
           pytest
-#           source venv/bin/activate
