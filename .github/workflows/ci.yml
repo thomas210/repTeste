@@ -23,8 +23,6 @@ jobs:
 
       - name: Instalar dependências
         run: |
-          python -m venv venv
-          source venv/bin/activate
           pip install pytest
 
       - name: Rodar testes
